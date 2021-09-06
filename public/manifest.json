@@ -3,7 +3,7 @@
   "short_name": "First Extension",
   "manifest_version": 2,
   "version":"0.0.1",
-  "content_security_policy": "script-src 'self' blob: filesystem: 'sha256-zqaFOSAJikk/8+I7R1n8Zcz/X1gj5GvtFdPqxrM/JeM=';object-src 'self'",
+  "content_security_policy": "script-src 'self' blob: filesystem: 'sha256-syh8p0JjfEXIT3US2G+dUxDooLpfzp1xmnOMPYMhshQ=';object-src 'self'",
   "browser_action":{
     "default_popup":"index.html",
     "default_title":"First Extension"

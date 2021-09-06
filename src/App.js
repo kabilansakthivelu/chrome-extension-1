@@ -10,19 +10,19 @@ function App() {
   return (<Router>
             <Switch>
             <Route path="/joke">
-                <Joke/>
+                <Joke />
             </Route>
             <Route path="/activity">
-                <Activity/>
+                <Activity />
             </Route>
             <Route path="/motivation">
-                <Motivation/>
+                <Motivation />
             </Route>
             <Route path="/yoga">
-                <Yoga/>
+                <Yoga />
             </Route>
             <Route path='*'>
-                <Home/>
+                <Home />
             </Route>
             </Switch>
           </Router>
