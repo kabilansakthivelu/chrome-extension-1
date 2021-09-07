@@ -1,13 +1,22 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import {useFetch} from './UseFetch';
 
 const Motivation = () => {
 
+    const [num, setNum] = useState();
+
     let data = useFetch("https://type.fit/api/quotes")
 
-    const var1 = Math.floor(Math.random() * 1500);
-    const obj1 = data[var1]
+    const test=()=>{
+    setNum(Math.floor(Math.random() * 1500));
+    }
+
+    useEffect(()=>{
+        test();
+    },[])
+
+        let obj1 = data[num];
 
     return (
         <div>
@@ -17,7 +26,7 @@ const Motivation = () => {
         <p className="text-white text-center text-2xl px-4 mt-4">- {obj1?.author || "unknown"}</p>
         <hr className="mt-6"/>
       <div className="flex flex-col items-center leading-loose mt-2 text-white text-xl">
-            <button className="hover:text-blue-700">
+            <button className="hover:text-blue-700" onClick={test}>
             Go for another one</button>
             <Link to="*" className="hover:text-blue-700">Back to Home</Link>
             </div>
