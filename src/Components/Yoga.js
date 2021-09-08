@@ -5,6 +5,7 @@ import {asanas} from './yoga-asanas';
 const Yoga = () => {
 
     const [num, setNum] = useState();
+    const [loading, setLoading] = useState(true);
 
     const test = () =>{
     setNum(Math.floor(Math.random() * 48));

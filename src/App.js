@@ -1,5 +1,5 @@
 import Home from './Components/Home';
-import Joke from './Components/Joke';
+import Joke from './Components/Word';
 import Activity from './Components/Activity';
 import Motivation from './Components/Motivation';
 import Yoga from './Components/Yoga';
@@ -9,7 +9,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 function App() {
   return (<Router>
             <Switch>
-            <Route path="/joke">
+            <Route path="/word">
                 <Joke />
             </Route>
             <Route path="/activity">
