@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import {useFetch} from './UseFetch';
+import Footer from './Footer';
 
 const Motivation = () => {
 
@@ -25,11 +26,7 @@ const Motivation = () => {
         <p className="text-white text-center text-2xl px-4 mt-4">{obj1?.text}</p>
         <p className="text-white text-center text-2xl px-4 mt-4">- {obj1?.author || "unknown"}</p>
         <hr className="mt-6"/>
-      <div className="flex flex-col items-center leading-loose mt-2 text-white text-xl">
-            <button className="hover:text-blue-700" onClick={test}>
-            Go for another one</button>
-            <Link to="*" className="hover:text-blue-700">Back to Home</Link>
-            </div>
+        <Footer test={test}/>
         </div>    
     )
 }

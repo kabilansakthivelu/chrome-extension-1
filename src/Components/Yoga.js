@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import {asanas} from './yoga-asanas';
+import Footer from './Footer';
 
 const Yoga = () => {
 
@@ -25,11 +26,7 @@ const Yoga = () => {
         <img loading="eager" src={obj1?.img_url || "image not found"} alt="asana_posture" className="w-75 h-64 pl-14"/> 
         </div>
         <hr className="mt-1"/>
-      <div className="flex flex-col items-center leading-loose text-white text-xl">
-            <button className="hover:text-blue-700" onClick={test}>
-            Go for another one</button>
-            <Link to="*" className="hover:text-blue-700">Back to Home</Link>
-            </div>
+        <Footer test={test}/>
         </div>    
     )
 }
