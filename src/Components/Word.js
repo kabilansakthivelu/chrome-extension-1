@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Header from './Header';
 import Footer from './Footer';
 
 const Word = () => {
@@ -16,8 +17,7 @@ const Word = () => {
 
     return (
         <div>
-            <h1 className="text-white text-center leading-loose font-bold text-2xl py-2">Learn a new word</h1>
-            <hr />
+            <Header heading="Learn a new word"/>
             <div className="flex flex-col h-52 justify-center">
             <h1 className="text-white text-center leading-loose text-2xl mt-4 px-4">Word: {data[0]?.word}</h1>
             <h1 className="text-white text-center text-2xl px-4">Definition: {data[0]?.definition}</h1>

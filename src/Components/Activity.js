@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Header from './Header';
 import Footer from './Footer';
 const Activity = () => {
 
@@ -16,8 +17,7 @@ const Activity = () => {
     
     return (
         <div>
-            <h1 className="text-white text-center leading-loose font-bold text-2xl py-2">Catch up an activity</h1>
-            <hr />
+            <Header heading="Catch up an activity"/>
             <div className="flex flex-col h-52 justify-center">
             <h1 className="text-white text-center text-2xl px-4 mt-4">Type: <span className="capitalize">{data?.type}</span></h1>
             <p className="text-white text-center text-2xl px-4 mt-4">Activity: {data?.activity}</p>
