@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import {Link} from 'react-router-dom';
 import {useFetch} from './UseFetch';
 import Footer from './Footer';
 
@@ -23,9 +22,11 @@ const Motivation = () => {
         <div>
         <h1 className="text-white text-center leading-loose font-bold text-2xl py-2">Get Ignited !!!!</h1>
         <hr />
+        <div className="flex flex-col h-52 justify-center">
         <p className="text-white text-center text-2xl px-4 mt-4">{obj1?.text}</p>
-        <p className="text-white text-center text-2xl px-4 mt-4">- {obj1?.author || "unknown"}</p>
-        <hr className="mt-6"/>
+        <p className="text-white text-center text-2xl px-4 mt-2">- {obj1?.author || "unknown"}</p>
+        </div>
+        <hr className="mt-4"/>
         <Footer test={test}/>
         </div>    
     )
